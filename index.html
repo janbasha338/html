@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Layout</title>
+    <link rel="stylesheet" href="whatsapp.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="profile1.jpg" alt="Profile Picture">
+                <h2>9951786718</h2>
+            </div>
+            <div class="contacts">
+                <div class="contact" onclick="selectContact('jashu')">jashu </div>
+                <div class="contact" onclick="selectContact('mohit')">mohit </div>
+                <div class="contact" onclick="selectContact('yaseen')">yaseen </div>
+                <!-- Additional contacts go here -->
+            </div>
+        </div>
+        <div class="chat-container">
+            <div class="message-area" id="message-area">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="typing-area">
+                <input type="text" id="message-input" placeholder="Type a message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="whatsapp.js"></script>
+</body>
+</html>
